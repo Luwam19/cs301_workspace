@@ -1,1 +1,4 @@
-console.log("hello world");
+// 
+
+const prompt = require("prompt-sync")();
+let user = prompt("luwam");
