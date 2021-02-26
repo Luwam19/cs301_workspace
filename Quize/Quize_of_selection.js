@@ -19,12 +19,20 @@
 // E.g., leap years: 2016, 2000
 // E.g., not leap years: 1700, 1800, 100
 
-const prompt = require ("prompt-sync")();
-let year  = prompt(parseInt("enter the year"));
+// const prompt = require ("prompt-sync")();
+// let year  = prompt(parseInt("enter the year"));
 
-if(year %100 ==0 && year % 400 ==0){
-    console.log ("the year is leap year")
-}
-else{
-    console.log ("not leap year")
-}
+// if(year %100 ==0 && year % 400 ==0){
+//     console.log ("the year is leap year")
+// }
+// else{
+//     console.log ("not leap year")
+// }
+
+
+
+// out put
+
+for(let i=0; i>10; i++){
+    console.log(i);
+}   

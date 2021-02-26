@@ -6,13 +6,13 @@
 // 55555
 
 
-// for(let i=1;i<=5;i++){
-//          let count ="";
-//          for(let j=0;j<i;j++){
-//            count+=i;  
-//          }
-//          console.log(count);
-//      }
+for(let i=1;i<=5;i++){
+         let count ="";
+         for(let j=0;j<i;j++){
+           count+=i;  
+         }
+         console.log(count);
+     }
 
 
 // 1

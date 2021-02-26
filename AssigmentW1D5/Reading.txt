@@ -1,0 +1,9 @@
+
+1. What are alternatives to default parameters?
+
+we can put zero and the default value will change from undefine to some value. It will give meaning full
+
+2. What are things you should consider while naming a function?
+
+we should consider being readable by the user and it should have to be meaningful, and short
+also, we have used camelcase whenever we are writing  the function 

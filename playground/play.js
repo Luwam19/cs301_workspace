@@ -120,18 +120,83 @@
 // }while(age>18);
 // console.log("exiting.....")
 
-for(let i =1;i<=5;i++){
-    let result=""
-    for(let j=1;j<5;j++){
-        result+=i;
-    }
-    console.log(result);
-}
+// for(let i =1;i<=5;i++){
+//     let result=""
+//     for(let j=1;j<5;j++){
+//         result+=i;
+//     }
+//     console.log(result);
+// }
 
-for(let i =1;i<=5;i++){
-    let result=""
-    for(let j=1;j<=5;j++){
-        result+=j;
-    }
-    console.log(result);
-}
+// for(let i =1;i<=5;i++){
+//     let result=""
+//     for(let j=1;j<=5;j++){
+//         result+=j;
+//     }
+//     console.log(result);
+//}
+// 'use strict'
+// let i;
+// for( i =0;i<=9;i+=3){
+// //console.log(i)
+// }
+// console.log(i);
+
+// for(let i=0; i>10; i++){
+//     console.log(i);
+// }
+
+// for(let i=0; i<=10; i--){
+//     console.log(i);
+// }
+
+// let i =1;
+// while(i<10){
+//  console.log(i)
+// }
+
+
+// //
+// function sum(n){
+//     if(n%2==0){
+//         return true;
+//     }
+    
+// }
+// console.log(sum(4));
+
+// const prompt = require ("prompt-sync")(); 
+// let number = +prompt("enter the number ");
+// function reverseDigits(n){
+//         let sum=0;
+//         while(number>0){
+            
+//         let last=number %10;
+//         sum =sum *10+last
+//         number=Math.floor(number/10) ;
+//         }
+        
+//        console.log(sum) 
+//        // return sum;
+        
+//     }
+   
+// console.log(reverseDigits())
+
+// diving the teams in to twoand set the re,aimimg into 3 groups
+    
+
+let numStudents=parseFloat(prompt("Enter the number of number of students "));
+let numTeamCreated=parseFloat(prompt("Enter the number of the team "));
+let numberN=Math.floor(numStudents/numTeamCreated);
+let numEqualSt;
+let extraStu=numStudents%numTeamCreated;
+if(extraStu===0){​​​​​​​​
+console.log(numTeamCreated + "teams "+ numberN + "members")
+}​​​​​​​​else{​​​​​​​​
+numEqualSt=numTeamCreated-extraStu;
+console.log(numEqualSt+"teams "+numberN + " members, "+extraStu+ "teams "+(numberN+1) +" members")
+}​​​​​​​​
+
+
+
