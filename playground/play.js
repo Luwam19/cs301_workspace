@@ -11,7 +11,7 @@
 // console.log(x);
 // console.log(x > y);
 
-const prompt = require("prompt-sync")();
+//const prompt = require("prompt-sync")();
 // let user = prompt ("enter the weather today");
 
 // if(user=="rainy"){
@@ -70,12 +70,68 @@ const prompt = require("prompt-sync")();
 
 // console.log("the spelling for the number is " + spelling);
 
-let weather = prompt("Please enter weather outside");
-let temp = prompt("Please enter current temperature");
-if (weather == 'sunny') {
-    if (temp < 80) {
-        console.log("Good day for outdoor running")
-    } else {
-        console.log("Better use trade mill at home.")
+// let weather = prompt("Please enter weather outside");
+// let temp = prompt("Please enter current temperature");
+// if (weather == 'sunny') {
+//     if (temp < 80) {
+//         console.log("Good day for outdoor running")
+//     } else {
+//         console.log("Better use trade mill at home.")
+//     }
+// }
+
+
+// let i=1;
+ 
+// while (i<=20){
+//     if(i%2===0){
+//         console.log(i);   
+//     }
+//     i++;
+// }
+
+// for (let i=1; i<=20; i++){
+//     if(i%2===0){
+//         console.log(i);   
+//     }
+// }
+
+// let i=1;
+// do{
+//     if(i%2===0){
+//        console.log(i);   
+//     }
+//         i++;
+// }while (i<=20);
+
+// let age = prompt("enter your age ");
+
+// while(age>18){
+//     console.log ("you are older than 18");
+//     age =prompt("enter you age again")
+// }
+// console.log ("exiting.....")
+
+
+// let age;
+// do{
+//   age = prompt("enter the age ")
+//   console.log("you are older than 18 ")  
+// }while(age>18);
+// console.log("exiting.....")
+
+for(let i =1;i<=5;i++){
+    let result=""
+    for(let j=1;j<5;j++){
+        result+=i;
     }
+    console.log(result);
+}
+
+for(let i =1;i<=5;i++){
+    let result=""
+    for(let j=1;j<=5;j++){
+        result+=j;
+    }
+    console.log(result);
 }
