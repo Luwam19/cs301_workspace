@@ -10,18 +10,15 @@ console.log(sum(4));
 
 const prompt = require ("prompt-sync")(); 
 let number = +prompt("enter the number ");
-function reverseDigits(n){
+function reverseDigits(number){
         let sum=0;
         while(number>0){
-            
         let last=number %10;
         sum =sum *10+last
         number=Math.floor(number/10) ;
         }
-        
-       console.log(sum) 
-       // return sum;
+         return sum;
         
     }
    
-console.log(reverseDigits())
+console.log(reverseDigits(number))

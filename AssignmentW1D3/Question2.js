@@ -19,5 +19,5 @@ else if(creadit>=60 && creadit<90){
     console.log(name +"is a junior")
 }
 else{
-    console.log(name+ "is a Senior")
+    console.log(name+ "is a Senior");
 }

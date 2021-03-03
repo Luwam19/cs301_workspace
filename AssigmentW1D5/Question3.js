@@ -13,7 +13,8 @@ const prompt =require("prompt-sync")();
 let width = prompt("enter the width ");
 let height = prompt("enter the height");
 let depth = prompt("enter the depth ");
-let sweep = prompt("enter the sweep here ")
+let sweep = prompt("enter the sweep here ");
+let sweep1= prompt("enter the sweep here ")
 
 
 function livingVolume(width,height,depth){
@@ -21,19 +22,19 @@ function livingVolume(width,height,depth){
     return volume1;
 }
 
-function triangleArea(sweep,sweep,width){
-    let s=(sweep+sweep+width)/2
-    let area=Math.sqrt(s*(s-sweep)*(s-sweep)*(s-width));
+function triangleArea(sweep,sweep1,width){
+    let s=(sweep+sweep1+width)/2
+    let area=Math.sqrt(s*(s-sweep)*(s-sweep1)*(s-width));
     return area;
 
 }
 
-function roofVolume(sweep,sweep,width,width){
-   let  volume2 = triangleArea(sweep,sweep,width)*width;
+function roofVolume(sweep,sweep1,width,width){
+   let  volume2 = triangleArea(sweep,sweep1,width)*width;
     return volume2;
 }
-function houseVolume(width,height,depth,sweep){
-    let result= livingVolume(width,height,depth)*roofVolume(sweep,sweep,width,width);
+function houseVolume(width,height,depth,sweep,sweep1){
+    let result= livingVolume(width,height,depth)*roofVolume(sweep,sweep1,width,width);
 return result;
 }
-console.log(houseVolume(width,height,depth,sweep));
+console.log(houseVolume(width,height,depth,sweep,sweep1));
