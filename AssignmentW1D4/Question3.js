@@ -4,28 +4,28 @@
 // locked out.”
 
 
-let guess;//= +prompt("enter the number guesssed");
-
+let guess;
+//= +prompt("enter the number guesssed");
 const PIN = 12345;
 
 let i = 0;
 while (i < 3) {
     guess = +prompt("enter the number guesssed");
     if (guess == PIN && i === 0) {
-        console.log("Correct, welcome back again")
+        console.log("Correct, welcome back again");
         break;
     } else if (guess === PIN && i == 1) {
-        console.log("Correct, welcome back again")
+        console.log("Correct, welcome back again");
         break;
     } else if (guess === PIN && i == 2) {
-        console.log("Correct, welcome back again")
+        console.log("Correct, welcome back again");
         break;
     }
 
-    i++
+    i++;
     console.log("Incorrect, try again. again ");
 }
 if (i === 3) {
-    console.log("Sorry but you have been locked out")
+    console.log("Sorry but you have been locked out");
 }
 

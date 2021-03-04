@@ -850,3 +850,22 @@ const prompt = require("prompt-sync")();
 // console.log(isStacked(10));
 // console.log(isStacked(8));
 //isStacked(15);
+
+// /`4. Write a function to compute HCF of two numbers. Write it as a function expression`
+// ////////function declearation
+
+// function getNewGCF(num,num1){
+//     if(num<num1){​​​​​​​​
+//     lettemp=a;
+//     a=b;
+//     b=temp;
+//     }​​​​​​​​
+//     do{​​​​​​​​
+//     letr=a%b;
+//     a=b;
+//     b=r
+//      }​​​​​​​​while(b!==0)
+//     return a;
+//     }​​​​​​​​
+//     console.log(getNewGCF(24,12))
+//     }

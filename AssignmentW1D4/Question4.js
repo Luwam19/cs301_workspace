@@ -20,7 +20,6 @@ while (count < n) {
     count++;
 }
 console.log(output);
-
 //const prompt= require("prompt-sync")();
 let num = +prompt("enter a number: ");
 let result = "";

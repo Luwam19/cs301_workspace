@@ -6,7 +6,6 @@
 
 
 
-
 const prompt = require("prompt-sync")();
 let digits = prompt("enter number here")
 let sum = 0;
