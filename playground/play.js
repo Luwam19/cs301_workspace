@@ -869,3 +869,25 @@ const prompt = require("prompt-sync")();
 //     }​​​​​​​​
 //     console.log(getNewGCF(24,12))
 //     }
+
+
+let score =[10,20,30,40,50];
+
+
+function findAverage(arr){
+    let sum=0;
+    for(let i=0;i<arr.length;i++){
+        sum+=arr[i];
+    }
+    return sum/arr.length;
+}
+
+let  average = findAverage(score);
+console.log(average);
+
+const scores2 = [];
+for (let i=0; i<10; i++){
+scores2[i] = Math.ceil(Math.random()*10);
+}
+console.log(scores2);
+console.log(findAverage(scores2));
