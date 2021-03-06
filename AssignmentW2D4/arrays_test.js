@@ -69,64 +69,64 @@ describe("rotateNRight", function () {
     });
 });
 
-// describe("filterRange", function () {
-//     it("tests [0, 100, 3, 6, -555], 6, 60", function () {
-//         assert.strictDeepEqual(arrays.filterRange([0, 100, 3, 6, -555], 6, 120), [6, 100]);
-//     });
-// });
+describe("filterRange", function () {
+    it("tests [0, 100, 3, 6, -555], 6, 60", function () {
+        assert.strictDeepEqual(arrays.filterRange([0, 100, 3, 6, -555], 6, 120), [6, 100]);
+    });
+});
 
 
-// describe("filterPalindromes", function () {
-//     it("tests [not, a, kayak, eagle, racecar]", function () {
-//         assert.strictDeepEqual(
-//             arrays.filterPalindromes(["not", "a", "kayak", "eagle", "racecar"]), ["a", "kayak", "racecar"]);
-//     });
-// });
+describe("filterPalindromes", function () {
+    it("tests [not, a, kayak, eagle, racecar]", function () {
+        assert.strictDeepEqual(
+            arrays.filterPalindromes(["not", "a", "kayak", "eagle", "racecar"]), ["a", "kayak", "racecar"]);
+    });
+});
 
 
-// describe("reverse2String", function () {
-//     it("Fox_Brown_Quick", function () {
-//         assert.strictEqual(
-//             arrays.reverse2String(["Quick", "Brown", "Fox"]),
-//             "Fox_Brown_Quick"
-//         );
-//     });
+describe("reverse2String", function () {
+    it("Fox_Brown_Quick", function () {
+        assert.strictEqual(
+            arrays.reverse2String(["Quick", "Brown", "Fox"]),
+            "Fox_Brown_Quick"
+        );
+    });
 
-//     it("4_3_2_1", function () {
-//         assert.strictEqual(arrays.reverse2String([1, 2, 3, 4]), "4_3_2_1");
-//     });
-// });
-
-
-// describe("enhancedIncludes", function () {
-//     it("[1, 2, 3, 4, 2], 2 ]", function () {
-//         assert.deepStrictEqual(arrays.enhancedIncludes([1, 2, 3, 4, 2], 2), [true, 1, 4,]);
-//     });
-// });
+    it("4_3_2_1", function () {
+        assert.strictEqual(arrays.reverse2String([1, 2, 3, 4]), "4_3_2_1");
+    });
+});
 
 
-// describe("Matrix", function () {
-//     describe("matrixAddition", function () {
-//         it("matrix addition of [[0,1,2],[9,8,7]] and [[6,5,4], [3,4,5]]  should be [ [ 6, 6, 6 ], [ 12, 12, 12 ] ]", function () {
-//             assert.deepStrictEqual(
-//                 matrixAddition(
-//                     [
-//                         [0, 1, 2],
-//                         [9, 8, 7],
-//                     ],
-//                     [
-//                         [6, 5, 4],
-//                         [3, 4, 5],
-//                     ]
-//                 ),
-//                 [
-//                     [6, 6, 6],
-//                     [12, 12, 12],
-//                 ]
-//             );
-//         });
-//     });
-// });
+describe("enhancedIncludes", function () {
+    it("[1, 2, 3, 4, 2], 2 ]", function () {
+        assert.deepStrictEqual(arrays.enhancedIncludes([1, 2, 3, 4, 2], 2), [true, 1, 4,]);
+    });
+});
+
+
+describe("Matrix", function () {
+    describe("matrixAddition", function () {
+        it("matrix addition of [[0,1,2],[9,8,7]] and [[6,5,4], [3,4,5]]  should be [ [ 6, 6, 6 ], [ 12, 12, 12 ] ]", function () {
+            assert.deepStrictEqual(
+                matrixAddition(
+                    [
+                        [0, 1, 2],
+                        [9, 8, 7],
+                    ],
+                    [
+                        [6, 5, 4],
+                        [3, 4, 5],
+                    ]
+                ),
+                [
+                    [6, 6, 6],
+                    [12, 12, 12],
+                ]
+            );
+        });
+    });
+});
 
 
 
