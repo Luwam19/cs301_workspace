@@ -217,6 +217,35 @@ function sortedTwoArrayIn2One(arrayOne,arrayTwo){
     
     let matr1=[[0,1,2],[9,8,7]];
     let matr2=[[6,5,4],[3,4,5]];
-    console.table(matrixAddition(matr1,matr2));
+    console.table(matrixAddition(matr1,matr2));  
+/**
+ * 
+ * @param {array} arr1;
+ * @returns{array}; 
+ */
+function checkBalance(arr1){​​​​​​​​
+let newArray=[];
+if(arr1.length%2!==0)return false;
+for(let i=0;i<arr1.length;i++){​​​​​​​​
+if(arr1[i]==="{​​​​​​​​"||arr1[i]==="["||arr1[i]==="("){​​​​​​​​
+newArray.push(arr1[i])
+ }​​​​​​​​else if(newArray [newArray.length-1]==="{​​​​​​​​"&&arr1[i]==="}​​​​​​​​"){​​​​​​​​
+newArray.pop()
+ }​​​​​​​​else if(newArray [newArray.length-1]==="["&&arr1[i]==="]"){​​​​​​​​
+newArray.pop()
+ }​​​​​​​​else if(newArray [newArray.length-1]==="("&&arr1[i]===")"){​​​​​​​​
+newArray.pop()
+ }​​​​​​​​
+ }​​​​​​​​
+if(newArray.length===0){​​​​​​​​
+return true;
+ }​​​​​​​​
+return false;
+}​​​​​​​​
+
+let exp = [")","(", ")", "[", "{​​​​​​​​", "}​​​​​​​​", "]"] 
+console.log(checkBalance(exp))
+
+
 module.exports= {isArrayEqual, addends,getMiddle,rotateLeft,rotateRight,rotateNRight,sortedTwoArrayIn2One,reverse2String,
     enhancedIncludes,filterRange,filterPalindromes,matrixAddition};
