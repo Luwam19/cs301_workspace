@@ -5,13 +5,15 @@
  * @return {number}; 
  */
    function countDigits(num){
-    if(num === 0){
+    if(num === 0){// num=Math.abs(num) if(num<9) return 1;
     return 0;
     }else{
     return 1 + countDigits(parseInt(num/10));
     }
    }
    console.log(countDigits(23456));
+
+   
    /**
     * 
     * @param {string} str;
@@ -23,6 +25,7 @@
     }else{
     let result= str.substring(str.length-1);
     return result + reverse(str.substring(0,str.length-1));
+    // return str[str.length-1]+ reverse(str.substring(0,str.length-1));
     }
    }
    console.log(reverse("luwam"));
